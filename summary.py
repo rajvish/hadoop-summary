@@ -228,7 +228,7 @@ class taskAverage:
 
 
 def usage(progname):
-	print progname, " [-v] -j <job history>  [-o output_file ]"
+	print progname, " [-v| --verbose] -j| --job <job history>  [-o | --output  output_file ]"
 
 
 def parseopts():

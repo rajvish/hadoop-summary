@@ -13,21 +13,28 @@
 # limitations under the License.
 #
 
-Overview
+INSTALLATION
+	Copy summary.py and tasks.py to a directory of choice.
+
+OVERVIEw
  Provides the summary of a hadoop job based on the default hadoop log.
 
-Usage:
-  summary [-v] -j log-file
+USAGE:
+  summary [-v| --verbose] -j | --job  log-file [ -o | --output outputfile ]
 
 DESCRIPTION
 	summary provides a succinct or verbose analyis of a hadoop job based on 
-	the log file.
+	the log file. The output is a CSV file that can be used by other programs 
+	for deeper analysis.
 	
 	summary is not clever at all. If the log file suits it, it delivers
 	reasonable results. If the log file is not suitable it could either survive
 	or die a horrible death. 
 
 	More work is needed to make summary a more robust character.
+
+	The log file is assumed to be the default hadoop log. It has not been tested
+	with other formats.
 
 OPTIONS
 	-j, --job 
@@ -38,3 +45,6 @@ OPTIONS
 		Provide a succinct and unhelpful message.
 	-o, --output output-file
 		Write CSV output to output-file.
+
+PYTHON
+	It has been tested with Python 2.7.2+
