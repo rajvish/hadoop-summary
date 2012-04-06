@@ -20,7 +20,7 @@ OVERVIEw
  Provides the summary of a hadoop job based on the default hadoop log.
 
 USAGE:
-  summary [-v| --verbose] -j | --job  log-file [ -o | --output outputfile ]
+  summary [-v| --verbose] -j | --job  log-file 
 
 DESCRIPTION
 	summary provides a succinct or verbose analyis of a hadoop job based on 
@@ -43,8 +43,6 @@ OPTIONS
 		Provide analysis of both job and task logs.
 	-h, --help	
 		Provide a succinct and unhelpful message.
-	-o, --output output-file
-		Write CSV output to output-file.
 
 PYTHON
 	It has been tested with Python 2.7.2+
